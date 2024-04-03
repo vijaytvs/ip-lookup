@@ -24,7 +24,7 @@ const nets = networkInterfaces();
       }
   }
 }
-  res.send(`Your IP Address is ${results["en0"][0]}.`)
+  res.send(`Your IP Address is ${JSON.stringify(results)}.`)
 })
 app.listen(3000, ()=>{
     console.log('runnig server')
